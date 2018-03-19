@@ -2,7 +2,7 @@
 #referral.py - installed on teacher computers. Takes an input of the name
 #and behavior and spits out several files on the sharedrive record
 
-#ultimate TODO is to alert Evans via email.
+#ultimate TODO is to alert AP via email.
 
 import docx, os, openpyxl, datetime
 
@@ -75,7 +75,7 @@ def writereferral(blanks, issues, remedies):
     doc.paragraphs[3].runs[2].text = blanks[0]
     doc.paragraphs[3].runs[2].underline = True
     doc.paragraphs[5].runs[0].text= "Referring Staff:"
-    doc.paragraphs[5].runs[1].text= ' Handwerg'
+    doc.paragraphs[5].runs[1].text= ' Mr. H'
     doc.paragraphs[5].runs[1].underline = True
     doc.paragraphs[5].runs[6].text= 'Date and Time:'
     doc.paragraphs[5].runs[7].text= timedate
